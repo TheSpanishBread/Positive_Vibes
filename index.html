@@ -29,8 +29,7 @@
             height: 8vh;
             margin: auto;
             font-size: 20px;
-            font-weight:200;
-            margin-bottom: 10vh;       
+            font-weight:200;       
              }
         header ul li{
             display: inline-block;
@@ -49,8 +48,9 @@
         main{
             display: block;
             margin: auto;
-            margin-top: 10vh;
-            margin-bottom: 10vh;
+            position: absolute;
+            top:20%;
+            left:42%;
         }
         .main-banner{
             margin: auto;
@@ -93,32 +93,28 @@
             font-size: 15px;
             font-weight: bold;
             border-radius: 10px;
-            background-color: white;
+            background: linear-gradient(180deg, rgba(56,56,56,1) 23%, rgba(70,46,28,1) 100%); 
             border:0.2px solid black;
+            color:whitesmoke;
         }
 /* `------------------------FOOTER--------------------------*/
         footer{
             position: absolute;
             bottom: 0px;
-            margin: auto;
-            margin-top: 10vh;
             width: 100%;
             text-align: center;
-            background-color: gainsboro;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:gainsboro;
+            background: url(textures/what-the-hex-dark.png);
+        }
+        footer a{
+            color:gainsboro
+        }
+        .footer-details{
+            
         }
         .footer-divider{
             display: inline-block;
-            margin: 0 3vw 0 3vw;
-        }
-        .footer-divider ul{
-            text-align: left; 
-        }
-        .footer-divider ul li{
-            margin: 1vh 0 1vh 0;
-        }
-        .footer-details{
-
+            margin:0 .5vw 0 .5vw;
         }
     </style>
 </head>
@@ -130,12 +126,13 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </header>
+    <hr>
     <main>
         <div class="main-banner">
         <h1><span class="plus">+</span> <span class="vibes">Vibes<span></h1>
         <h2 class="tagline">Insert Tagline here</h2>
         </div>
-        <form id="login" action="homepage.html">
+        <form id="login" action="bagongpangalan.html">
             <input type="text" id="email-input" class="input" placeholder="Email">
             <input type="password" id="password-input" class="input" placeholder="Password">
             <button type="submit">Log In</button>
@@ -143,28 +140,16 @@
     </main>
     <footer>
         <div class="footer-details">
-        <div class="footer-banner footer-divider">
-            <h1><span class="plus">+</span> <span class="vibes">Vibes<span></h1>
-            <p>Some long description dot dot dot</p>        
-        </div>
-        <div class="footer-company footer-divider">
-            <h1>COMPANY</h1>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Blog</a></li>
+                <li class="footer-divider"><a href="#">About Us</a></li>
+                <li class="footer-divider"><a href="#">Terms of Service</a></li>
+                <li class="footer-divider"><a href="#">Privacy Policy</a></li>
+                <li class="footer-divider"><a href="#">Blog</a></li>
+                <li class="footer-divider"><a href="#">About Us</a></li>
+                <li class="footer-divider"><a href="#">Terms of Service</a></li>
+                <li class="footer-divider"><a href="#">Privacy Policy</a></li>
+                <li class="footer-divider"><a href="#">Blog</a></li>
             </ul>
-        </div>
-        <div class="footer-connect-with-us footer-divider">
-            <h1>CONNECT WITH US</h1>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
     </div>
     <p>+Vibes Copyright 2020</p>
     </footer>
