@@ -8,6 +8,7 @@
         +Vibes
     </title>
     <style>
+/* `------------GLOBAL-----------------------------*/
         ul{
             list-style: none;
         }
@@ -17,6 +18,49 @@
         }
         body{
             margin: auto;
+        }
+/* `------------------HEADER-----------------------------*/
+        header{
+            background-color:burlywood;
+            width: 100%;
+            height: 8vh;
+            margin: auto;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+            font-weight:200;
+            margin-bottom: 10vh;
+        }
+        header ul li{
+            display: inline-block;
+            margin:0 20px 0 20px;
+        }
+        header ul{
+            float:right;
+            margin-right:5vw;
+        }
+/* `------------------------MAIN--------------------------*/
+        main{
+            background-color: cadetblue;
+            margin: auto;
+        }
+        .main-banner{
+            margin: auto;
+            text-align: center;
+        }
+        #login{
+            margin: auto;
+            text-align: center;
+        }
+        .input{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+/* `------------------------FOOTER--------------------------*/
+        .footer-divider{
+            display: inline-block;
         }
     </style>
 </head>
@@ -29,19 +73,22 @@
         </ul>
     </header>
     <main>
+        <div class="main-banner">
         <h1><span class="plus">+</span> <span class="vibes">Vibes<span></h1>
         <h2>Insert Tagline here</h2>
-        <form id="login">
-            <input type="text" id="email-input" placeholder="Email">
-            <input type="password" id="password-input" placeholder="Password">
+        </div>
+        <form id="login" action="homepage.html">
+            <input type="text" id="email-input" class="input" placeholder="Email">
+            <input type="password" id="password-input" class="input" placeholder="Password">
+            <button type="submit">Log In</button>
         </form>        
     </main>
     <footer>
-        <div class="footer-banner">
+        <div class="footer-banner footer-divider">
             <h1><span class="plus">+</span> <span class="vibes">Vibes<span></h1>
             <p>Some long description dot dot dot</p>        
         </div>
-        <div class="footer-company">
+        <div class="footer-company footer-divider">
             <h1>COMPANY</h1>
             <ul>
                 <li><a href="#">About Us</a></li>
@@ -50,7 +97,7 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
-        <div class="footer-connect-with-us">
+        <div class="footer-connect-with-us footer-divider">
             <h1>CONNECT WITH US</h1>
             <ul>
                 <li><a href="#">About Us</a></li>
